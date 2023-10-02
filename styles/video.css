@@ -1,0 +1,141 @@
+.video-grid {
+  display: grid;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+
+@media (max-width: 550px) {
+  .video-grid {
+    display: block;
+  }
+  .video-preview {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .sidebar {
+    display: none;
+  }
+  body {
+    margin-left: -50px;
+  }
+}
+
+@media (min-width:751px) and (max-width: 850px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .sidebar {
+    display: none;
+  }
+  body {
+    margin-left: -50px;
+  }
+}
+
+@media (min-width: 851px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width:1100px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.thumbnail {
+  width: 100%;
+}
+
+.video-time {
+  background-color: black;
+  color: white;
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+  font-family: roboto, arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 4px 4px 4px;
+  border-radius: 2px;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.profile-picture {
+  width: 36px;
+  border-radius:50px;
+}
+
+.video-title {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+.video-author, .video-stats {
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+
+.video-author {
+  margin-bottom: 4px;
+  width: 100px;
+}
+
+.profile-picture-container {
+  position: relative;
+  display: inline-block;
+}
+
+.channel-picture-tooltips {
+  background-color: white;
+  width: 200px;
+  padding: 12px 12px;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  position: absolute;
+  top: 55px;
+  z-index: 300;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.15s;
+}
+
+.profile-picture-container:hover .channel-picture-tooltips {
+  opacity: 1;
+}
+
+.profile-picture-tooltips {
+  width: 50px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+
+.names-tooltips {
+  font-weight: bold;
+}
+
+.subs-tooltips {
+  margin-top: 4px;
+  font-size: 14px;
+}

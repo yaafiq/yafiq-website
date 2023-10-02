@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Position Practise</title>
+</head>
+<body style="
+  height: 1000px;
+  padding-top: 50px;
+  padding-left: 100px;
+">
+  <div style="
+    color: white;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: 50px;
+    height: 50px;
+    z-index: 1;
+  ">Header</div>
+
+  <div style="
+    background-color: green;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 50px;
+    width: 100px;
+  ">Side Bar
+    <div style="
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    top: 0px;
+    right: 0px;
+  ">X</div>
+  </div>
+
+  <div style="
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+  ">absolute</div>
+
+  <div style="
+    background-color: lightblue;
+    width: 200px;
+    height: 200px;
+  ">Div 1</div>
+  <div style="
+    background-color: lightpink;
+    width: 200px;
+    height: 200px;
+    position: relative;
+  ">Div 2
+    <div style="
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    right: 10px;
+    bottom: 10px;
+    padding: 3px 5px 3px 5px;
+    font-size: 12px;
+  ">14:20</div>  
+</div>
+</body>
+</html>
